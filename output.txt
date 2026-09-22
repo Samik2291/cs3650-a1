@@ -1,27 +1,35 @@
-[samikmukherjee@login-students cs3650-a1]$ pwd
-/home/samikmukherjee/cs3650-a1
-[samikmukherjee@login-students cs3650-a1]$ mkdir command-practice
-[samikmukherjee@login-students cs3650-a1]$ cd command-practice
 [samikmukherjee@login-students command-practice]$ pwd
 /home/samikmukherjee/cs3650-a1/command-practice
-[samikmukherjee@login-students command-practice]$ echo "pear" > fruits.txt
-[samikmukherjee@login-students command-practice]$ echo "apple" >> fruits.txt
-[samikmukherjee@login-students command-practice]$ echo "banana" >> fruits.txt
-[samikmukherjee@login-students command-practice]$ cat fruits.txt
-pear
-apple
-banana
-[samikmukherjee@login-students command-practice]$ sort fruits.txt
-apple
-banana
-pear
-[samikmukherjee@login-students command-practice]$ cp fruits.txt fruits-backup.txt
-[samikmukherjee@login-students command-practice]$ cat fruits-backup.txt
-pear
-apple
-banana
-[samikmukherjee@login-students command-practice]$ mv fruits-backup.txt fruits-saved.txt
-[samikmukherjee@login-students command-practice]$ ls
-fruits-saved.txt  fruits.txt
-[samikmukherjee@login-students command-practice]$ grep "apple" fruits.txt
-apple
+[samikmukherjee@login-students command-practice]$ mkdir -p semester-courses
+[samikmukherjee@login-students command-practice]$ 
+[samikmukherjee@login-students command-practice]$ cd semester-courses
+[samikmukherjee@login-students semester-courses]$ pwd
+/home/samikmukherjee/cs3650-a1/command-practice/semester-courses
+[samikmukherjee@login-students semester-courses]$ echo "CS3650 Computer Systems" > courses.txt
+[samikmukherjee@login-students semester-courses]$ echo "DS4400 Machine Learning" >> courses.txt
+[samikmukherjee@login-students semester-courses]$ echo "CS3200 Database Design" >> courses.txt
+[samikmukherjee@login-students semester-courses]$ echo "CS3800 Theory of Computation" >> courses.txt
+[samikmukherjee@login-students semester-courses]$ cat courses.txt
+CS3650 Computer Systems
+DS4400 Machine Learning
+CS3200 Database Design
+CS3800 Theory of Computation
+[samikmukherjee@login-students semester-courses]$ sort courses.txt
+CS3200 Database Design
+CS3650 Computer Systems
+CS3800 Theory of Computation
+DS4400 Machine Learning
+[samikmukherjee@login-students semester-courses]$ cp courses.txt courses-backup.txt
+[samikmukherjee@login-students semester-courses]$ cat courses-backup.txt
+CS3650 Computer Systems
+DS4400 Machine Learning
+CS3200 Database Design
+CS3800 Theory of Computation
+[samikmukherjee@login-students semester-courses]$ mv courses-backup.txt courses-saved.txt
+[samikmukherjee@login-students semester-courses]$ ls
+courses-saved.txt  courses.txt
+[samikmukherjee@login-students semester-courses]$ grep "^CS" courses.txt
+CS3650 Computer Systems
+CS3200 Database Design
+CS3800 Theory of Computation
+[samikmukherjee@login-students semester-courses]$ 
