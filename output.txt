@@ -1,1 +1,27 @@
-# Simply copy and paste the output from your terminal here!
+[samikmukherjee@login-students cs3650-a1]$ pwd
+/home/samikmukherjee/cs3650-a1
+[samikmukherjee@login-students cs3650-a1]$ mkdir command-practice
+[samikmukherjee@login-students cs3650-a1]$ cd command-practice
+[samikmukherjee@login-students command-practice]$ pwd
+/home/samikmukherjee/cs3650-a1/command-practice
+[samikmukherjee@login-students command-practice]$ echo "pear" > fruits.txt
+[samikmukherjee@login-students command-practice]$ echo "apple" >> fruits.txt
+[samikmukherjee@login-students command-practice]$ echo "banana" >> fruits.txt
+[samikmukherjee@login-students command-practice]$ cat fruits.txt
+pear
+apple
+banana
+[samikmukherjee@login-students command-practice]$ sort fruits.txt
+apple
+banana
+pear
+[samikmukherjee@login-students command-practice]$ cp fruits.txt fruits-backup.txt
+[samikmukherjee@login-students command-practice]$ cat fruits-backup.txt
+pear
+apple
+banana
+[samikmukherjee@login-students command-practice]$ mv fruits-backup.txt fruits-saved.txt
+[samikmukherjee@login-students command-practice]$ ls
+fruits-saved.txt  fruits.txt
+[samikmukherjee@login-students command-practice]$ grep "apple" fruits.txt
+apple
